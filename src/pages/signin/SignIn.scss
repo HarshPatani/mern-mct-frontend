@@ -1,0 +1,106 @@
+.signIn {
+  height: 100%;
+
+  .signIn__card {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 80%;
+    height: 90%;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 0.5rem;
+
+    .signIn__left {
+      width: 50%;
+      padding: 1rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      & > p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      input {
+        background-color: rgb(219, 216, 216);
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem 1rem;
+      }
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+      label {
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .signIn__remember {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .signIn__btns {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        button {
+          width: 50%;
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .signIn__btn__login {
+          border: 2px solid rgb(181, 26, 181);
+          background-color: rgb(181, 26, 181);
+          color: white;
+          &:hover {
+            color: rgb(181, 26, 181);
+            background-color: white;
+          }
+        }
+        .signIn__btn__createAccount {
+          border: 2px solid rgb(181, 26, 181);
+          background-color: white;
+          color: rgb(181, 26, 181);
+          &:hover {
+            background-color: rgb(181, 26, 181);
+            color: white;
+          }
+        }
+      }
+
+      .signIn__socialLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        p:nth-child(2) {
+          color: rgb(181, 26, 181);
+          cursor: pointer;
+        }
+      }
+    }
+    .signIn__right {
+      width: 50%;
+
+      .signIn__right__img {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
